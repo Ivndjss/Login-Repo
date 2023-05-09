@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/ff64637a6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="registration-wrapper">
+      <div class="registration-card">
+        <h3>Registration</h3>
+        <form id="registration-form" onsubmit="register(event)">
+          <div class="name-group">
+            <div class="form-field">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" required>
+            </div>
+            <div class="form-field">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" required>
+            </div>
+            <div class="form-field">
+              <label for="middlename">Middle Name</label>
+              <input type="text" id="middlename">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+          </div>
+          <div class="form-field">
+            <label for="address">Address</label>
+            <input type="text" id="address" required>
+          </div>
+          <div class="oauth-signup">
+            <p>Or sign up with:</p>
+            <div class="oauth-buttons">
+              <button onclick="loginWithGoogle()"><i class="fab fa-google"></i></button>
+              <button onclick="loginWithLinkedIn()"><i class="fab fa-linkedin"></i></button>
+              <button onclick="loginWithFacebook()"><i class="fab fa-facebook"></i></button>
+            </div>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

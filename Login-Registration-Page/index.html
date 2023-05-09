@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySoftwareKits - Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/ff64637a6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="login-wrapper">
+      <div class="login-card">
+        <img src="mysoftwarekits_logo.png" alt="MySoftwareKits Logo" class="logo">
+        <h3>Login</h3>
+        <form id="login-form" onsubmit="login(event)">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+          <button type="submit">Login</button>
+        </form>
+        <div class="oauth-buttons">
+          <button onclick="loginWithGoogle()"><i class="fab fa-google"></i></button>
+          <button onclick="loginWithLinkedIn()"><i class="fab fa-linkedin"></i></button>
+          <button onclick="loginWithFacebook()"><i class="fab fa-facebook"></i></button>
+        </div>
+        <div class="forgot-password">
+          <a href="/forgot-password">Forgot password?</a>
+        </div>
+        <div class="signup-link">
+          Don't have an account? <a href="/signup">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+  <script>
+    function login(event) {
+      event.preventDefault();
+      // Your login logic here
+    }
+
+    function loginWithGoogle() {
+      // Google OAuth logic here
+    }
+
+    function loginWithLinkedIn() {
+      // LinkedIn OAuth logic here
+    }
+
+    function loginWithFacebook() {
+      // Facebook OAuth logic here
+    }
+  </script>
+</body>
+
+</html>
